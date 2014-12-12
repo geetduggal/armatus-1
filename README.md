@@ -20,7 +20,7 @@ Here is an example of how to compile boost with Clang++ and use Clang++ to compi
 
 Boost-specific details:
 
-    ./bootstrap --prefix=$HOME/boost
+    ./bootstrap.sh --with-toolset=clang --prefix=$HOME/boost
     ./b2 clean
     ./b2 install toolset=clang cxxflags="-stdlib=libc++" linkflags="-stdlib=libc++"
 
